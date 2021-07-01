@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Sang5_01_07.Models.Shows>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cinemas.CinemaName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShowDays.ShowDayID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShowTimes.ShowTimeID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cinemas.CinemaName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Movies.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShowDays.ShowDayID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShowTimes.ShowTimeID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ShowId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ShowId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ShowId })
+        </td>
+    </tr>
+}
+
+</table>
