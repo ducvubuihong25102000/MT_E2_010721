@@ -171,7 +171,11 @@
     <Compile Include="Controllers\CinemasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\ReservationsController.cs" />
+    <Compile Include="Controllers\ShowDaysController.cs" />
     <Compile Include="Controllers\ShowsController.cs" />
+    <Compile Include="Controllers\ShowTimesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -273,6 +277,26 @@
     <Content Include="Views\Shows\Details.cshtml" />
     <Content Include="Views\Shows\Edit.cshtml" />
     <Content Include="Views\Shows\Index.cshtml" />
+    <Content Include="Views\ShowDays\Create.cshtml" />
+    <Content Include="Views\ShowDays\Delete.cshtml" />
+    <Content Include="Views\ShowDays\Details.cshtml" />
+    <Content Include="Views\ShowDays\Edit.cshtml" />
+    <Content Include="Views\ShowDays\Index.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\ShowTimes\Create.cshtml" />
+    <Content Include="Views\ShowTimes\Delete.cshtml" />
+    <Content Include="Views\ShowTimes\Details.cshtml" />
+    <Content Include="Views\ShowTimes\Edit.cshtml" />
+    <Content Include="Views\ShowTimes\Index.cshtml" />
+    <Content Include="Views\Reservations\Create.cshtml" />
+    <Content Include="Views\Reservations\Delete.cshtml" />
+    <Content Include="Views\Reservations\Details.cshtml" />
+    <Content Include="Views\Reservations\Edit.cshtml" />
+    <Content Include="Views\Reservations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
